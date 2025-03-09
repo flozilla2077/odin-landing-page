@@ -1,8 +1,92 @@
 
 * {
     border: 1px red solid;
-    box-sizing: content-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+
+body    {
+    margin: 0px;
+    padding: 0px;
+}
+
+.page   {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page > *   {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #1f2937;
+    color: azure;
+    flex: 0 0 auto;
+}
+
+.header > div {
+    flex: 0 0 15%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-align: right;
+    font-size: smaller;
+}
+
+.header > div:first-child   {
+    flex-grow: 2;
+    text-align: left;
+    font-weight: 800;
+    font-size: larger;
+}
+
+.awesome    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: azure;
+    margin: 0px;
+    gap: 5px;
+}
+
+.awesome > div:first-child  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.awesome > div:first-child > button {
+    width: 20%;
+    border-radius: 4px;
+    padding: 5px;
+    color: azure;
+    background-color: #3882f6;
+    font-weight: 800;
+
+
+}
+
+.awesome > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.awesome > div:nth-child(2) > img {
+    width: 50%;
+    padding: 10%;
 }
 
