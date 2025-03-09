@@ -30,6 +30,9 @@ body    {
     background-color: #1f2937;
     color: azure;
     flex: 0 0 auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    flex: 1 1 2em;
 }
 
 .header > div {
@@ -56,6 +59,9 @@ body    {
     color: azure;
     margin: 0px;
     gap: 5px;
+    padding-bottom: 10px;
+
+    flex: 1 1 15em;
 }
 
 .awesome > div:first-child  {
@@ -75,6 +81,7 @@ body    {
     color: azure;
     background-color: #3882f6;
     font-weight: 800;
+    border: transparent;
 
 
 }
@@ -85,8 +92,81 @@ body    {
     align-content: center;
 }
 
-.awesome > div:nth-child(2) > img {
-    width: 50%;
-    padding: 10%;
+#snowstorm {
+    padding: 1%;
+    border: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#snowstorm > img  {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px transparent;
+}
+
+.random {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #1F2937;
+    flex: 1 1 20em;
+}
+
+img {
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #3882f6;
+}
+
+.random > div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 800;
+}
+
+.random > div:last-child    {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    gap: 5px;
+
+    font-size: smaller;
+}
+
+.quote  {
+    flex: 1 1 10em;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    font-size: larger;
+    font-style: italic;
+    font-weight: 300;
+
+    background-color: #e5e7eb;
+    color: #1F2937;
+
+}
+
+.quote > div    {
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.quote > :last-child    {
+    text-align: right;
+    font-size: large;
+    font-style: normal;
+    font-weight: 700;
+
 }
 
