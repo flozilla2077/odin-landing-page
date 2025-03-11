@@ -1,30 +1,29 @@
 
 * {
-    border: 1px red solid;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-body    {
+/*     border: 1px red solid;
+ */    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0px;
     padding: 0px;
 }
+
+
 
 .page   {
 
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 
 }
 
 .page > *   {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     background-color: #1f2937;
@@ -61,7 +60,7 @@ body    {
     gap: 5px;
     padding-bottom: 10px;
 
-    flex: 1 1 15em;
+    flex: 2 1 15em;
 }
 
 .awesome > div:first-child  {
@@ -103,6 +102,7 @@ body    {
     width: 80%;
     border-radius: 5px;
     border: 1px transparent;
+    min-width: 300px;
 }
 
 .random {
@@ -111,7 +111,7 @@ body    {
     justify-content: center;
 
     color: #1F2937;
-    flex: 1 1 20em;
+    flex: 2 1 20em;
 }
 
 img {
@@ -134,7 +134,6 @@ img {
     align-content: center;
     padding: 5px;
     gap: 5px;
-
     font-size: smaller;
 }
 
@@ -170,3 +169,71 @@ img {
 
 }
 
+.CTA    {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 100px;
+    color: #F9FAF8;
+
+    flex: 1;
+}
+
+.CTA-background {
+    display: flex;
+    background-color: #3882f6;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.CTA-background > div {
+    flex: 7;
+
+}
+
+
+#button2    {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    padding: 10px;
+    flex: 3;
+    font-size: larger;
+    border: none;
+    outline: none;
+
+}
+
+#button2 > p {
+    border-radius: 5px;
+    border: #F9FAF8 solid 2px;
+}
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+    color: #F9FAF8;
+
+}
+
+.footer  > p {
+    flex: 2;
+    padding: 5px 5px;
+    font-weight: 800;
+}
+
+.credits    {
+    flex: 1;
+    padding: 5px 5px;
+}
+
+.footer > .credits > ul {
+    display: flex;
+    font-size: smaller;
+}
+
+.footer > .credits > ul > li{
+    list-style: none;
+}
